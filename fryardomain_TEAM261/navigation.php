@@ -2,8 +2,20 @@
 
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title></title>
+        <meta charset="utf-8">
+	<title>Navigation Bar Demonstration</title>
+	<link rel="stylesheet" type="text/css" href="/media/style.css" media="screen">	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
     </head>
     <body>
         <header>
