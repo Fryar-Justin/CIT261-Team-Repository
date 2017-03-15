@@ -1,108 +1,108 @@
 <html>
 
-<head>
-<script>
-function changeAudio(audioSourceLink) {
-    var audio = document.getElementById("audioPlayer"),
-            source = document.getElementById("ogg_src");
-    		
-    source.src = audioSourceLink;
-    audio.pause();
-    audio.load();
-    audio.play();
-    
- } 
-    
-function showMusicExample(imageSource){
-image = document.getElementById('exampleImg');
-image.src = imageSource;
-}
-    
-    
-function changeMedia(imageSource, audioSourceLink) {
- 	showMusicExample(imageSource);
- 	changeAudio(audioSourceLink);
- 	} 
- 
- 
- 
-</script>
-</head>
+    <head>
+        <script>
+            function changeAudio(audioSourceLink) {
+                var audio = document.getElementById("audioPlayer"),
+                        source = document.getElementById("ogg_src");
 
-<body>
-<h3>Rhythm Resources</h3>
-Here are some sets of rhythm lines and audio recordings that will help you practice your rhythm.
+                source.src = audioSourceLink;
+                audio.pause();
+                audio.load();
+                audio.play();
+
+            }
+
+            function showMusicExample(imageSource) {
+                image = document.getElementById('exampleImg');
+                image.src = imageSource;
+            }
 
 
-<button id="Example1" onclick='changeMedia("media/rhythmResources/1.jpg", "media/rhythmResources/1.ogg")'>Example 1</button><br><br>
-<!--changeMedia("media/rhythmResources/1.jpg", "media/rhythmResources/1.ogg") 
-changeAudio("media/rhythmResources/1.ogg")
-showMusicExample("media/rhythmResources/1.jpg")-->
-
- <img id="exampleImg" src="imageSource" /><br>
-
-<audio id= 'audioPlayer' controls>
-      <source id="ogg_src" src="" type="audio/ogg" />
-      Your browser does not support the audio element.
-</audio>
+            function changeMedia(imageSource, audioSourceLink) {
+                showMusicExample(imageSource);
+                changeAudio(audioSourceLink);
+            }
 
 
-<!--
-    <br><br>
-<b>Example 1</b><br>
-    <img src="/media/RhythmResources/1.jpg" alt="Rhythm 1" height="69" width="723"><br>
-    <b>Listen:</b><br>
-    <audio controls><source  src="/media/RhythmResources/1.ogg" type="audio/ogg">
-    The browser you are using does not support this media file. Please try another browser.
-    </audio><br><br>
-<b>Example 2</b><br>
-    <img src="/media/RhythmResources/2.jpg" alt="Rhythm 2" height="69" width="723"><br>
-    <b>Listen:</b><br>
-    <audio controls><source  src="/media/RhythmResources/2.ogg" type="audio/ogg">
-    The browser you are using does not support this media file. Please try another browser.
-    </audio><br><br>
-<b>Example 3</b><br>
-    <img src="/media/RhythmResources/3.jpg" alt="Rhythm 3" height="69" width="723"><br>
-    <b>Listen:</b><br>
-    <audio controls><source  src="/media/RhythmResources/3.ogg" type="audio/ogg">
-    The browser you are using does not support this media file. Please try another browser.
-    </audio><br><br>
-<b>Example 4</b><br>
-    <img src="/media/RhythmResources/4.jpg" alt="Rhythm 4" height="69" width="723"><br>
-    <b>Listen:</b><br>
-    <audio controls><source  src="/media/RhythmResources/4.ogg" type="audio/ogg">
-    The browser you are using does not support this media file. Please try another browser.
-    </audio><br><br>
-<b>Example 5</b><br>
-    <img src="/media/RhythmResources/5.jpg" alt="Rhythm 5" height="69" width="723"><br>
-    <b>Listen:</b><br>
-    <audio controls><source  src="/media/RhythmResources/5.ogg" type="audio/ogg">
-    The browser you are using does not support this media file. Please try another browser.
-    </audio><br><br>
-<b>Example 6</b><br>
-    <img src="/media/RhythmResources/6.jpg" alt="Rhythm 6" height="69" width="723"><br>
-    <b>Listen:</b><br>
-    <audio controls><source  src="/media/RhythmResources/6.ogg" type="audio/ogg">
-    The browser you are using does not support this media file. Please try another browser.
-    </audio><br><br>
-<b>Example 7</b><br>
-    <img src="/media/RhythmResources/7.jpg" alt="Rhythm 7" height="69" width="723"><br>
-    <b>Listen:</b><br>
-    <audio controls><source  src="/media/RhythmResources/7.ogg" type="audio/ogg">
-    The browser you are using does not support this media file. Please try another browser.
-    </audio><br><br>
-<b>Example 8</b><br>
-    <img src="/media/RhythmResources/8.jpg" alt="Rhythm 8" height="69" width="723"><br>
-    <b>Listen:</b><br>
-    <audio controls><source  src="/media/RhythmResources/8.ogg" type="audio/ogg">
-    The browser you are using does not support this media file. Please try another browser.
-    </audio><br><br>
-<b>Example 9</b><br>
-    <img src="/media/RhythmResources/9.jpg" alt="Rhythm 9" height="69" width="723"><br>
-    <b>Listen:</b><br>
-    <audio controls><source  src="/media/RhythmResources/9.ogg" type="audio/ogg">
-    The browser you are using does not support this media file. Please try another browser.
-    </audio><br><br> -->
-</body>
+
+        </script>
+    </head>
+
+    <body>
+        <h3>Rhythm Resources</h3>
+        Here are some sets of rhythm lines and audio recordings that will help you practice your rhythm.
+
+
+        <button id="Example1" onclick='changeMedia("media/rhythmResources/1.jpg", "media/rhythmResources/1.ogg")'>Example 1</button><br><br>
+        <!--changeMedia("media/rhythmResources/1.jpg", "media/rhythmResources/1.ogg") 
+        changeAudio("media/rhythmResources/1.ogg")
+        showMusicExample("media/rhythmResources/1.jpg")-->
+
+        <img id="exampleImg" src="imageSource" /><br>
+
+        <audio id= 'audioPlayer' controls>
+            <source id="ogg_src" src="" type="audio/ogg" />
+            Your browser does not support the audio element.
+        </audio>
+
+
+        <!--
+            <br><br>
+        <b>Example 1</b><br>
+            <img src="/media/RhythmResources/1.jpg" alt="Rhythm 1" height="69" width="723"><br>
+            <b>Listen:</b><br>
+            <audio controls><source  src="/media/RhythmResources/1.ogg" type="audio/ogg">
+            The browser you are using does not support this media file. Please try another browser.
+            </audio><br><br>
+        <b>Example 2</b><br>
+            <img src="/media/RhythmResources/2.jpg" alt="Rhythm 2" height="69" width="723"><br>
+            <b>Listen:</b><br>
+            <audio controls><source  src="/media/RhythmResources/2.ogg" type="audio/ogg">
+            The browser you are using does not support this media file. Please try another browser.
+            </audio><br><br>
+        <b>Example 3</b><br>
+            <img src="/media/RhythmResources/3.jpg" alt="Rhythm 3" height="69" width="723"><br>
+            <b>Listen:</b><br>
+            <audio controls><source  src="/media/RhythmResources/3.ogg" type="audio/ogg">
+            The browser you are using does not support this media file. Please try another browser.
+            </audio><br><br>
+        <b>Example 4</b><br>
+            <img src="/media/RhythmResources/4.jpg" alt="Rhythm 4" height="69" width="723"><br>
+            <b>Listen:</b><br>
+            <audio controls><source  src="/media/RhythmResources/4.ogg" type="audio/ogg">
+            The browser you are using does not support this media file. Please try another browser.
+            </audio><br><br>
+        <b>Example 5</b><br>
+            <img src="/media/RhythmResources/5.jpg" alt="Rhythm 5" height="69" width="723"><br>
+            <b>Listen:</b><br>
+            <audio controls><source  src="/media/RhythmResources/5.ogg" type="audio/ogg">
+            The browser you are using does not support this media file. Please try another browser.
+            </audio><br><br>
+        <b>Example 6</b><br>
+            <img src="/media/RhythmResources/6.jpg" alt="Rhythm 6" height="69" width="723"><br>
+            <b>Listen:</b><br>
+            <audio controls><source  src="/media/RhythmResources/6.ogg" type="audio/ogg">
+            The browser you are using does not support this media file. Please try another browser.
+            </audio><br><br>
+        <b>Example 7</b><br>
+            <img src="/media/RhythmResources/7.jpg" alt="Rhythm 7" height="69" width="723"><br>
+            <b>Listen:</b><br>
+            <audio controls><source  src="/media/RhythmResources/7.ogg" type="audio/ogg">
+            The browser you are using does not support this media file. Please try another browser.
+            </audio><br><br>
+        <b>Example 8</b><br>
+            <img src="/media/RhythmResources/8.jpg" alt="Rhythm 8" height="69" width="723"><br>
+            <b>Listen:</b><br>
+            <audio controls><source  src="/media/RhythmResources/8.ogg" type="audio/ogg">
+            The browser you are using does not support this media file. Please try another browser.
+            </audio><br><br>
+        <b>Example 9</b><br>
+            <img src="/media/RhythmResources/9.jpg" alt="Rhythm 9" height="69" width="723"><br>
+            <b>Listen:</b><br>
+            <audio controls><source  src="/media/RhythmResources/9.ogg" type="audio/ogg">
+            The browser you are using does not support this media file. Please try another browser.
+            </audio><br><br> -->
+    </body>
 
 </html>
