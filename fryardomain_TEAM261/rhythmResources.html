@@ -7,9 +7,7 @@ function changeAudio(audioSourceLink) {
             source = document.getElementById("ogg_src");
     		
     source.src = audioSourceLink;
-    audio.pause();
     audio.load();
-    audio.play();
     
  } 
     
@@ -31,7 +29,7 @@ function changeMedia(imageSource, audioSourceLink) {
 
 <body>
 <h3>Rhythm Resources</h3>
-Here are some sets of rhythm lines and audio recordings that will help you practice your rhythm.<br>
+Here are some sets of rhythm lines and audio recordings that will help you practice your rhythm.<br><br>
 
 
 <button id="Example1" onclick='changeMedia("media/rhythmResources/1.jpg", "media/rhythmResources/1.ogg")'>Example 1</button>
