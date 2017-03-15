@@ -3,6 +3,9 @@ html,
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.rightContent{
+    text-align: center;
+}
 #icon {
     font-size: 36px; 
     cursor:pointer; 
