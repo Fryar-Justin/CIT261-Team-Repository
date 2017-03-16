@@ -76,16 +76,16 @@ var setBtn = document.getElementById('set');
 var watch = new Stopwatch(timer);
 
 function start() {
-  document.getElementById("toggle").src="media/img/start-down.png";
+  document.getElementById("toggle").src="/media/img/start-down.png";
   watch.start();
 }
 
 function stop() {
-  document.getElementById("toggle").src="media/img/start-up.png";
-  document.getElementById("stop").src="media/img/stop-down.png";
+  document.getElementById("toggle").src="/media/img/start-up.png";
+  document.getElementById("stop").src="/media/img/stop-down.png";
   watch.stop();
   setTimeout(function(){
-	document.getElementById("stop").src="media/img/stop-up.png";
+	document.getElementById("stop").src="/media/img/stop-up.png";
 	}, 150);	
 
 }
@@ -137,7 +137,7 @@ function remTimes(){
 	var times = JSON.parse(localStorage.getItem("practiceTimes"));
 	var dates = JSON.parse(localStorage.getItem("practiceDates"));
 	
-	for (i = times.length - 1; i >= 0;  i--){
+	for (var i = times.length - 1; i >= 0;  i--){
 			textnode += "On " + dates[i] + " you practiced for: " + times[i] + "</br>";
 	}
 	document.getElementById("practiceHistory").innerHTML = textnode;
