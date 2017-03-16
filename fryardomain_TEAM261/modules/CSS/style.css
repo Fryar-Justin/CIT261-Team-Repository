@@ -106,3 +106,19 @@ body {
 #practiceHistory li{
 	list-style: none;
 }
+.timerMessage{
+    width: 240px;
+    height: 45px;
+}
+.sendButton{
+    background: #00a7b0;
+    color: white;
+    height: 45px;
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+}
+.sendButton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}

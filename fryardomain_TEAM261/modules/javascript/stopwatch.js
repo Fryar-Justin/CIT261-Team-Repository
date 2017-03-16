@@ -1,6 +1,4 @@
 var time;
-var practiceHistory = new Array();
-var daysDate = new Array();
 var timerMinutes;
 var timerSeconds;
 
@@ -86,7 +84,7 @@ function stop() {
   watch.stop();
   setTimeout(function(){
 	document.getElementById("stop").src="/media/img/stop-up.png";
-	}, 150);	
+	}, 190);	
 
 }
 function resetTimer(){
@@ -109,36 +107,44 @@ setBtn.addEventListener('click', function() {
 });
 
 function practHistory(){
-	var textnode = "";
 	if (timerSeconds > 0){
-		
-	practiceHistory.push(timerMinutes + ' : ' + timerSeconds);
-	daysDate.push( new Date().toJSON().slice(0,10).replace(/-/g,'/'));
-	
-	localStorage.setItem("practiceDates", JSON.stringify(daysDate.slice(0).slice(-7)));
-	localStorage.setItem("practiceTimes", JSON.stringify(practiceHistory.slice(0).slice(-7)));
-	
+        
 	var times = JSON.parse(localStorage.getItem("practiceTimes"));
 	var dates = JSON.parse(localStorage.getItem("practiceDates"));
-	
-	for (i = times.length - 1; i >= 0;  i--){
-			textnode += dates[i] + ": Practiced for " + times[i] + "</br>";
+        
+        times.push(timerMinutes + ' : ' + timerSeconds);
+	dates.push( new Date().toJSON().slice(0,10).replace(/-/g,'/'));
+        
+	setTime(times, dates);	
+        
+	}
+}
+
+function setTime(time, date){
+    var textnode = "";
+    for (i = time.length - 1; i >= 0;  i--){
+			textnode += date[i] + ": Practiced for " + time[i] + "</br>";
 	}
 	document.getElementById("practiceHistory").innerHTML = textnode;
-	
-	
-	}
-
-
+        
+        localStorage.setItem("practiceTimes", JSON.stringify(time.slice(0).slice(-7)));
+	localStorage.setItem("practiceDates", JSON.stringify(date.slice(0).slice(-7)));
 }
 
 function remTimes(){
-	var textnode = "";
-	var times = JSON.parse(localStorage.getItem("practiceTimes"));
+        var times = JSON.parse(localStorage.getItem("practiceTimes"));
 	var dates = JSON.parse(localStorage.getItem("practiceDates"));
-	
-	for (var i = times.length - 1; i >= 0;  i--){
-			textnode += "On " + dates[i] + " you practiced for: " + times[i] + "</br>";
-	}
-	document.getElementById("practiceHistory").innerHTML = textnode;
+	setTime(times, dates);
+}
+function mailTime(){
+    $.ajax( { type : 'POST',
+          data : { },
+          url  : 'mail2.php',              // <=== CALL THE PHP FUNCTION HERE.
+          success: function ( data ) {
+            alert( data );               // <=== VALUE RETURNED FROM FUNCTION.
+          },
+          error: function ( xhr ) {
+            alert( "error" );
+          }
+        });
 }
