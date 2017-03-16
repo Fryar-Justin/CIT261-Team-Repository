@@ -10,7 +10,7 @@
         <a href="/pages/tuning.php">  Tuning</a>
         <a href="#">  Rhythms</a>
         <a href="#">  Duets</a>
-        <a href="#">  Charts</a>
+        <a href="/pages/charts.php">  Charts</a>
         <a href="#">  Videos</a>
     </div>
     <span id="icon" onclick="openNav()">&#9776;</span>

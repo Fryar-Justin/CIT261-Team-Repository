@@ -1,3 +1,3 @@
 <div>
-    NAVIGATION
+    
 </div>
