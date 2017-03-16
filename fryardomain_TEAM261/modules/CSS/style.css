@@ -97,4 +97,12 @@ body {
    background: white;
    color: black;
 }
-
+#toggle{
+	padding-right: 30px;
+}
+#stop{
+	padding-left: 30px;
+}
+#practiceHistory li{
+	list-style: none;
+}
