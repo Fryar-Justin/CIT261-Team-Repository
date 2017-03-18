@@ -20,7 +20,7 @@
                 <h1 id="timer">00 : 00 </h1>
   		<img id="toggle" src="/media/img/start-up.png"></img>
   		<img id="stop" src="/media/img/stop-up.png"></img><br>
-  		<button id="set" >Set Practice Time</button>
+  		<button id="set" ontouch="practHistory()">Set Practice Time</button>
   		<button id="reset">Reset</button>
   		<script><?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/stopwatch.js'; ?></script>
                 <br><br>

@@ -141,7 +141,7 @@ function mailTime(){
           data : { },
           url  : 'mail2.php',              // <=== CALL THE PHP FUNCTION HERE.
           success: function ( data ) {
-            alert( data );               // <=== VALUE RETURNED FROM FUNCTION.
+            alert( 'Your message and amount of time practiced has been sent');               // <=== VALUE RETURNED FROM FUNCTION.
           },
           error: function ( xhr ) {
             alert( "error" );

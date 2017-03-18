@@ -12,12 +12,12 @@ body {
     float: left; 
     position: absolute;
     left:25px;
-    top:22px;
+    top:10px;
     color: white;
 }
 .banner h1{
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     background-color: #00a7b0;
     color: white;
     margin-top: 0;
