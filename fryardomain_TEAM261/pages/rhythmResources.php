@@ -5,8 +5,8 @@
         <title>Music Mania - Rhythm Resources</title>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/head.php'; ?>         <!--Contains the CSS and Google Fonts links-->
         <script>
-            <?php include $_SERVER['rhythmResources'].'/modules/javascript/navigation.js'; ?>                 // Contains navigation bar scripts
-            <?php include $_SERVER['rhythmResources'].'/modules/javascript/rhythmResources.js'; ?> // Contains Scripts for this page
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/navigation.js'; ?>                 // Contains navigation bar scripts
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/rhythmResources.js'; ?> // Contains Scripts for this page
         </script>
     </head>
     <body>
@@ -26,7 +26,7 @@ Here are some sets of rhythm lines and audio recordings that will help you pract
 <button id="Example5" onclick='changeMedia("/media/rhythmResources/5.jpg", "/media/rhythmResources/5.ogg")'>Example 5</button>
 <button id="Example6" onclick='changeMedia("/media/rhythmResources/6.jpg", "/media/rhythmResources/6.ogg")'>Example 6</button>
 <button id="Example7" onclick='changeMedia("/media/rhythmResources/7.jpg", "/media/rhythmResources/7.ogg")'>Example 7</button>
-<button id="Example8" onclick='changeMedia("/media/rhythmResources/8.jpg", "//media/rhythmResources/8.ogg")'>Example 8</button>
+<button id="Example8" onclick='changeMedia("/media/rhythmResources/8.jpg", "/media/rhythmResources/8.ogg")'>Example 8</button>
 <button id="Example9" onclick='changeMedia("/media/rhythmResources/9.jpg", "/media/rhythmResources/9.ogg")'>Example 9</button>
     
     
