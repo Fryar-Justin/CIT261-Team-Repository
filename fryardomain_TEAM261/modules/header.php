@@ -9,7 +9,7 @@
         <p>Resources</p>
         <a href="/pages/tuning.php">  Tuning</a>
         <a href="/pages/rhythmResources.php">  Rhythms</a>
-        <a href="#">  Duets</a>
+        <a href="/pages/regimen.php">  Regimen</a>
         <a href="/pages/charts.php">  Charts</a>
         <a href="#">  Videos</a>
     </div>

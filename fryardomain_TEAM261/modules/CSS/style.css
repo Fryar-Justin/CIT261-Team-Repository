@@ -122,3 +122,7 @@ body {
     cursor: pointer;
     opacity: 0.8;
 }
+#practiceList{
+    list-style: none;
+    text-align: left;
+}
