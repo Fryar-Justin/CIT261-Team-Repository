@@ -1,4 +1,5 @@
 var step = 0;
+
 function add(){
     step += 1;
     var input = document.getElementById("listInput").value;
@@ -20,6 +21,7 @@ function remove(){
 }
 
 function reset(){
-    document.getElementById("practiceList").innerHTML = '';
+    document.getElementById("practiceList").innerHTML = ' ';
     step = 0;
 }
+
