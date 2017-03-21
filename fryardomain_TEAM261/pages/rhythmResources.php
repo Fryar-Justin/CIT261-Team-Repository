@@ -16,7 +16,7 @@
         <main>
             <div class="rightContent">
                 <h1>Rhythm Resources</h1>
-Here are some sets of rhythm lines and audio recordings that will help you practice your rhythm.<br><br>
+                <p>Here are some sets of rhythm lines and audio recordings that will help you practice your rhythm.</p><br><br>
 
 
 <button id="Example1" onclick='changeMedia("/media/rhythmResources/1.jpg", "/media/rhythmResources/1.ogg")'>Example 1</button>

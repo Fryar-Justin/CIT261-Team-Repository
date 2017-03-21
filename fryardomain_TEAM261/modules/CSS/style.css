@@ -3,6 +3,12 @@ html,
 body {
     font-family: 'Montserrat', sans-serif;
 }
+h1, h2, h3 {
+    color: #68014B;
+}
+p {
+    font-family: 'Droid Sans', sans-serif;
+}
 .rightContent{
     text-align: center;
 }
@@ -18,7 +24,7 @@ body {
 .banner h1{
     text-align: center;
     font-size: 50px;
-    background-color: #00a7b0;
+    background-color: #29a3a3;
     color: white;
     margin-top: 0;
 }
@@ -57,7 +63,7 @@ body {
 
 
 .sidenav a:hover, .offcanvas a:focus {
-    color: #00a7b0;
+    color: #29a3a3;
 }
 
 .sidenav .closebtn {
@@ -90,7 +96,7 @@ body {
    -webkit-border-radius: 9px 9px 9px 9px;
    border-radius: 9px 9px 9px 9px;
    box-shadow: 0px 0px 5px gray;
-   background: #00a7b0;
+   background: #5da1a2;
 }
 
 #noteSelect option{
@@ -110,8 +116,13 @@ body {
     width: 240px;
     height: 45px;
 }
+#timer{
+    font-size: 45px;
+    font-weight: 300;
+    color: black;
+}
 .sendButton{
-    background: #00a7b0;
+    background: #29a3a3;
     color: white;
     height: 45px;
     font-size: 20px;
@@ -126,3 +137,18 @@ body {
     list-style: none;
     text-align: left;
 }
+button {
+    background: #29a3a3;
+    color: white;
+    border: none;
+    text-decoration: bold;
+    font-size: 18px;
+    padding: 5px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+

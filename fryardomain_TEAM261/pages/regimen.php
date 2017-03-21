@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Music Mania</title>
+        <title>Practice Regimen</title>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/head.php'; ?>         <!--Contains the CSS and Google Fonts links-->
         <script>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/navigation.js'; ?>                 // Contains navigation bar scripts
@@ -10,13 +10,14 @@
         </script>
        
     </head>
-    <body>
+    <body onload="remRegimen()">
         <header>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/header.php'; ?>                               <!--Contains navigation tags-->
         </header>
         <main>
             <div class="rightContent">
-                <input type="text" id="listInput" placeholder="Input List Item Here"></input><br>
+                <h1>Practice Regimen</h1>
+                <input type="text" id="listInput" placeholder="Input List Item Here"></input><br><br>
                 <button onclick="add()">Add</button>
                 <button onclick="remove()">Remove</button>
                 <button onclick="reset()">Reset List</button>
