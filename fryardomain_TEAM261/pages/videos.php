@@ -19,15 +19,30 @@
                 <hr>
                 <table width="80%">
                     <tr>
-                        <td><video width="45%" controls><source src="/media/videos/How_to_Read_Sheet_music.mp4" type="video/mp4"></video></td>
-                        <td><video width="45%" controls><source src="/media/videos/Major_Scales_Piano.mp4" type="video/mp4"></video></td>
+                        <td>
+                            <h2>How to read sheet music:</h2>
+                            <video controls><source src="/media/videos/How_to_Read_Sheet_music.mp4" type="video/mp4"></video>
+                        </td>
+                        <td>
+                            <h2>Major Scales for Piano:
+                            <video controls><source src="/media/videos/Major_Scales_Piano.mp4" type="video/mp4"></video>
+                        </td>
                     </tr>
                     <tr>
-                        <td><video width="45%" controls><source src="/media/videos/Minor_Scales_Piano.mp4" type="video/mp4"></video></td>
-                        <td><video width="45%" controls><source src="/media/videos/Time_Signatures_Part_1.mp4" type="video/mp4"></video></td>
+                        <td>
+                            <h2>Minor Scales for Piano:</h2>
+                            <video controls><source src="/media/videos/Minor_Scales_Piano.mp4" type="video/mp4"></video>
+                        </td>
+                        <td>
+                            <h2>Time Signatures:</h2>
+                            <video controls><source src="/media/videos/Time_Signatures_Part_1.mp4" type="video/mp4"></video>
+                        </td>
                     </tr>
                     <tr>
-                        <td><video width="45%" controls><source src="/media/videos/Tuning_A_Guitar.mp4" type="video/mp4"></video></td>
+                        <td>
+                            <h2>Tuning a Guitar:</h2>
+                            <video controls><source src="/media/videos/Tuning_A_Guitar.mp4" type="video/mp4"></video>
+                        </td>
                     </tr>
                 </table>
             </div>
