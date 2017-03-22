@@ -32,10 +32,10 @@ Here are some sets of rhythm lines and audio recordings that will help you pract
     
     <br><br>
 
- <img id="exampleImg" src="imageSource" /><br>
+ <img id="exampleImg" src="/media/rhythmResources/1.jpg"  /><br>
 
 <audio id= 'audioPlayer' controls>
-      <source id="ogg_src" src="" type="audio/ogg" />
+      <source id="ogg_src" src="/media/rhythmResources/1.ogg" type="audio/ogg" />
       Your browser does not support the audio element.
 </audio>
             </div>
