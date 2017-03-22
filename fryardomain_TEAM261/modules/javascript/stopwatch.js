@@ -1,6 +1,7 @@
 var time;
 var timerMinutes;
 var timerSeconds;
+var isRunning = false;
 
 function Stopwatch(elem) {
   var interval;
@@ -39,6 +40,7 @@ function Stopwatch(elem) {
 	timerSeconds = seconds;
     return minutes + ' : ' + seconds ;
   }
+ 
 
   this.isOn = false;
 
@@ -139,7 +141,7 @@ function remTimes(){
 function mailTime(){
     $.ajax( { type : 'POST',
           data : { },
-          url  : 'mail2.php',              // <=== CALL THE PHP FUNCTION HERE.
+          url  : '/pages/mail2.php',              // <=== CALL THE PHP FUNCTION HERE.
           success: function ( data ) {
             alert( 'Your message and amount of time practiced has been sent');               // <=== VALUE RETURNED FROM FUNCTION.
           },

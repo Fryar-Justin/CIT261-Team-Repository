@@ -21,9 +21,9 @@
                 <button onclick="add()">Add</button>
                 <button onclick="remove()">Remove</button>
                 <button onclick="reset()">Reset List</button>
-                <ul id="practiceList" class="practiceList">
+                <div id="practiceList" class="practiceList">
                     
-                </ul>
+                </div>
             </div>
         </main>
         <footer>

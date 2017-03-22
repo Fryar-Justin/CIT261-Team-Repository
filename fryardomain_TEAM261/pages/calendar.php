@@ -6,7 +6,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/head.php'; ?>         <!--Contains the CSS and Google Fonts links-->
         <script>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/navigation.js'; ?>                 // Contains navigation bar scripts
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/***LINK JAVASCRIPT FILE***.js'; ?> // Contains Scripts for this page
+             // Contains Scripts for this page
         </script>
     </head>
     <body>

@@ -3,10 +3,13 @@
 <html>
     <head>
         <title>Music Mania</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/head.php'; ?>         <!--Contains the CSS and Google Fonts links-->
         <script>
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/navigation.js'; ?>                 // Contains navigation bar scripts
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/login.js'; ?> // Contains Scripts for this page
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/navigation.js'; ?> 
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/tuning.js'; ?> 
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/regimen.js'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/ajaxScript.js'; ?>  // Contains navigation bar scripts
         </script>
     </head>
     <body>
@@ -14,22 +17,8 @@
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/header.php'; ?>                               <!--Contains navigation tags-->
         </header>
         <main>
-            <div class="rightContent">
-               <div id="usernameOutput">Welcome</div>
-                <hr>
-                <p>Please Enter your login credentials. </p>
-                <br>Username: <br>
-                <input type= "text" id='usernameInput'>
-                <br>Password: <br>
-                <input type= "text" id='passwordInput'>
-                <br><button type="button" onclick="verifyInfo()">Login</button>
-                <p>Haven't registered? Fill out the form below to register your username and password!</p>
-                <br>Please add your Username: <br>
-                <input type= "text" id='usernameInput'>
-                <br>Please add your Password: <br>
-                <input type= "text" id='passwordInput'><br>
-                <button type="button" onclick="addInfo()">Register</button>
-                
+            <div class="rightContent" id="rightContent">
+
             </div>
         </main>
         <footer>
