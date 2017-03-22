@@ -15,10 +15,21 @@
         </header>
         <main>
             <div class="rightContent">
-                <h1>HEADING1</h1>
+                <h1>Helpful Tutorials</h1>
                 <hr>
-                <p>PARAGRAPH</p>
-                <button type="button" onclick="">REPLACE TEXT</button>
+                <table width="80%">
+                    <tr>
+                        <td><video width="45%" controls><source src="/media/videos/How_to_Read_Sheet_music.mp4" type="video/mp4"></video></td>
+                        <td><video width="45%" controls><source src="/media/videos/Major_Scales_Piano.mp4" type="video/mp4"></video></td>
+                    </tr>
+                    <tr>
+                        <td><video width="45%" controls><source src="/media/videos/Minor_Scales_Piano.mp4" type="video/mp4"></video></td>
+                        <td><video width="45%" controls><source src="/media/videos/Time_Signatures_Part_1.mp4" type="video/mp4"></video></td>
+                    </tr>
+                    <tr>
+                        <td><video width="45%" controls><source src="/media/videos/Tuning_A_Guitar.mp4" type="video/mp4"></video></td>
+                    </tr>
+                </table>
             </div>
         </main>
         <footer>
