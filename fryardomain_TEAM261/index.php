@@ -18,16 +18,16 @@
                <div id="usernameOutput">Welcome</div>
                 <hr>
                 <p>Please Enter your login credentials. </p>
-                <br>Username: 
+                <br>Username: <br>
                 <input type= "text" id='usernameInput'>
-                <br>Password: 
+                <br>Password: <br>
                 <input type= "text" id='passwordInput'>
                 <br><button type="button" onclick="verifyInfo()">Login</button>
                 <p>Haven't registered? Fill out the form below to register your username and password!</p>
-                <br>Please add your Username: 
+                <br>Please add your Username: <br>
                 <input type= "text" id='usernameInput'>
-                <br>Please add your Password: 
-                <input type= "text" id='passwordInput'>
+                <br>Please add your Password: <br>
+                <input type= "text" id='passwordInput'><br>
                 <button type="button" onclick="addInfo()">Register</button>
                 
             </div>
