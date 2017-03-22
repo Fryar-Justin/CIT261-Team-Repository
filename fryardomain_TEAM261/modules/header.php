@@ -11,7 +11,7 @@
         <a href="/pages/rhythmResources.php">  Rhythms</a>
         <a href="#" onClick="regimenPage();">  Regimen</a>
         <a href="/pages/charts.php">  Charts</a>
-        <a href="#">  Videos</a>
+        <a href="/pages/videos.php">  Videos</a>
     </div>
     <span id="icon" onclick="openNav()">&#9776;</span>
 </div>
