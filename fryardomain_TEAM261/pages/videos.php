@@ -9,7 +9,7 @@
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/videos.js'; ?> // Contains Scripts for this page
         </script>
     </head>
-    <body onload="main()">
+    <body>
         <header>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/header.php'; ?>                               <!--Contains navigation tags-->
         </header>
@@ -17,34 +17,14 @@
             <div class="rightContent">
                 <h1>Helpful Tutorials</h1>
                 <hr>
-                <table width="80%">
-                    <tr>
-                        <td>
-                            <h2>How to read sheet music:</h2>
-                            <video controls><source src="/media/videos/How_to_Read_Sheet_music.mp4" type="video/mp4"></video>
-                        </td>
-                        <td>
-                            <h2>Major Scales for Piano:
-                            <video controls><source src="/media/videos/Major_Scales_Piano.mp4" type="video/mp4"></video>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Minor Scales for Piano:</h2>
-                            <video controls><source src="/media/videos/Minor_Scales_Piano.mp4" type="video/mp4"></video>
-                        </td>
-                        <td>
-                            <h2>Time Signatures:</h2>
-                            <video controls><source src="/media/videos/Time_Signatures_Part_1.mp4" type="video/mp4"></video>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Tuning a Guitar:</h2>
-                            <video controls><source src="/media/videos/Tuning_A_Guitar.mp4" type="video/mp4"></video>
-                        </td>
-                    </tr>
-                </table>
+                <button type="button" onclick="displayVideo(1)">Sheet Music</button>
+                <button type="button" onclick="displayVideo(2)">Major Piano Scales</button>
+                <button type="button" onclick="displayVideo(3)">Minor Piano Scales</button>
+                <button type="button" onclick="displayVideo(4)">Time Signatures</button>
+                <button type="button" onclick="displayVideo(5)">Tuning a Guitar</button>
+                <p>
+                    <video id="video" controls><source id="source" src="/media/videos/How_to_Read_Sheet_music.mp4" type="video/mp4"></video>
+                <p>
             </div>
         </main>
         <footer>
