@@ -7,8 +7,6 @@
         <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/head.php'; ?>         <!--Contains the CSS and Google Fonts links-->
         <script>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/navigation.js'; ?> 
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/tuning.js'; ?> 
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/regimen.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/ajaxScript.js'; ?>  // Contains navigation bar scripts
         </script>
     </head>

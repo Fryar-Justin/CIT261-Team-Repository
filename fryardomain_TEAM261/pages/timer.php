@@ -22,7 +22,7 @@
   		<img id="stop" src="/media/img/stop-up.png"></img><br>
   		<button id="set" ontouch="practHistory()">Set Practice Time</button>
   		<button id="reset">Reset</button>
-  		<script><?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/stopwatch.js'; ?></script>
+                <script src="/modules/javascript/stopwatch.js"></script>
                 <br><br>
                 <p>Optional Message:</p><textarea id="message" class="timerMessage"></textarea><br>
                 <button id="send" class="sendButton" onclick="mailTime()">Send Latest Practice Time to Teacher</button><br>

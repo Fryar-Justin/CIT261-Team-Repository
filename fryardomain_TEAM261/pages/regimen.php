@@ -4,6 +4,7 @@
     <head>
         <title>Practice Regimen</title>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/head.php'; ?>         <!--Contains the CSS and Google Fonts links-->
+        <script src="/modules/javascript/regimen.js"></script>
         <script>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/navigation.js'; ?>                 // Contains navigation bar scripts
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/regimen.js'; ?> // Contains Scripts for this page

@@ -136,7 +136,6 @@ button {
     background: #29a3a3;
     color: white;
     border: none;
-    text-decoration: bold;
     font-size: 18px;
     padding: 5px;
     -webkit-border-radius: 14px;
@@ -151,7 +150,7 @@ button:hover{
     margin: 2px;
 }
 
-#chart{
+#chart{ 
     width: 100%;
 }
 
