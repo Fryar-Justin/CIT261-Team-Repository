@@ -17,11 +17,11 @@
             <div class="rightContent">
                 <h1>Helpful Tutorials</h1>
                 <hr>
-                <button type="button" onclick="displayVideo(1)">Sheet Music</button>
-                <button type="button" onclick="displayVideo(2)">Major Piano Scales</button>
-                <button type="button" onclick="displayVideo(3)">Minor Piano Scales</button>
-                <button type="button" onclick="displayVideo(4)">Time Signatures</button>
-                <button type="button" onclick="displayVideo(5)">Tuning a Guitar</button>
+                <button class="rhythmBtn" type="button" onclick="displayVideo(1)">Sheet Music</button>
+                <button class="rhythmBtn" type="button" onclick="displayVideo(2)">Major Piano Scales</button>
+                <button class="rhythmBtn" type="button" onclick="displayVideo(3)">Minor Piano Scales</button>
+                <button class="rhythmBtn" type="button" onclick="displayVideo(4)">Time Signatures</button>
+                <button class="rhythmBtn" type="button" onclick="displayVideo(5)">Tuning a Guitar</button>
                 <p>
                     <video id="video" controls><source id="source" src="/media/videos/How_to_Read_Sheet_music.mp4" type="video/mp4"></video>
                 <p>
