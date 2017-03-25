@@ -24,7 +24,7 @@
   		<button id="reset">Reset</button>
                 <script src="/modules/javascript/stopwatch.js"></script>
                 <br><br>
-                <p>Optional Message:</p><textarea id="message" class="timerMessage"></textarea><br>
+                <p>Optional Message:</p><textarea name="message" id="message" class="timerMessage"><?php echo htmlentities($user_message) ?></textarea><br>
                 <button id="send" class="sendButton" onclick="mailTime()">Send Latest Practice Time to Teacher</button><br>
                 <h2>Last Seven Practice Times:</h2>
   		<div id="practiceHistory"></div>
