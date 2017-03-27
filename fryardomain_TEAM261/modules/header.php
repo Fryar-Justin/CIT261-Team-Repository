@@ -7,7 +7,7 @@
         <a href="/pages/timer.php">Practice</a>
         <a href="/pages/calendar.php">Calendar</a>
         <p>Resources</p>
-        <a href="/pages/tuning.php">  Tuning</a>
+        <a href="#" onclick="tuningPage()">  Tuning</a>
         <a href="/pages/rhythmResources.php">  Rhythms</a>
         <a href="/pages/regimen.php">  Regimen</a>
         <a href="/pages/charts.php">  Charts</a>

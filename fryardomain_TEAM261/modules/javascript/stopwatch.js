@@ -1,3 +1,11 @@
+function timerPage(){
+    var eraseTagWithId = new bodyTag();
+    eraseTagWithId.emptyIt("rightContent");
+    
+    //start page build
+    //create event listeners
+    //parameter to decide which function to run from button
+    
 var time;
 var timerMinutes;
 var timerSeconds;
@@ -149,4 +157,5 @@ function mailTime(){
             alert( "error" );
           }
         });
+}
 }
