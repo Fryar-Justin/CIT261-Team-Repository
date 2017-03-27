@@ -10,8 +10,8 @@
         <a href="#" onclick="tuningPage()">  Tuning</a>
         <a href="/pages/rhythmResources.php">  Rhythms</a>
         <a href="#" onclick="regimenPage()">  Regimen</a>
-        <a href="/pages/charts.php">  Charts</a>
-        <a href="/pages/videos.php">  Videos</a>
+        <a onclick="getObject(pageDirectory[1])">  Charts</a>
+        <a onclick="getObject(pageDirectory[0])">  Videos</a>
     </div>
     <span id="icon" onclick="openNav()">&#9776;</span>
 </div>
