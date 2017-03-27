@@ -18,3 +18,9 @@ function tuningPage(){
 </div>\n\
 <div id='noteView'></div>";
 }
+function timerPage(){
+    
+}
+function regimenPage(){
+    
+}
