@@ -1,11 +1,3 @@
-function timerPage(){
-    var eraseTagWithId = new bodyTag();
-    eraseTagWithId.emptyIt("rightContent");
-    
-    //start page build
-    //create event listeners
-    //parameter to decide which function to run from button
-    
 var time;
 var timerMinutes;
 var timerSeconds;
@@ -20,9 +12,10 @@ function Stopwatch(elem) {
       var timePassed = delta();
       time += timePassed;
     }
-
+    var timer = document.getElementById('timer');
+    
     var formattedTime = timeFormatter(time);
-    elem.textContent = formattedTime;
+    timer.textContent = formattedTime;
   }
 
   function delta() {
@@ -76,10 +69,10 @@ function Stopwatch(elem) {
 
 
 var timer = document.getElementById('timer');
-var toggleBtn = document.getElementById('toggle');
-var stopBtn = document.getElementById('stop');
-var resetBtn = document.getElementById('reset');
-var setBtn = document.getElementById('set');
+//var toggleBtn = document.getElementById('toggle');
+//var stopBtn = document.getElementById('stop');
+//var resetBtn = document.getElementById('reset');
+//var setBtn = document.getElementById('set');
 
 var watch = new Stopwatch(timer);
 
@@ -88,7 +81,7 @@ function start() {
   watch.start();
 }
 
-function stop() {
+function stopTimer() {
   document.getElementById("toggle").src="/media/img/start-up.png";
   document.getElementById("stop").src="/media/img/stop-down.png";
   watch.stop();
@@ -100,7 +93,7 @@ function stop() {
 function resetTimer(){
 	 watch.reset();
 }
-
+/*
 stopBtn.addEventListener('click', function() {
   stop();
 
@@ -114,7 +107,7 @@ resetBtn.addEventListener('click', function() {
 });
 setBtn.addEventListener('click', function() {
   practHistory();
-});
+});*/
 
 function practHistory(){
 	if (timerSeconds > 0){
@@ -157,5 +150,4 @@ function mailTime(){
             alert( "error" );
           }
         });
-}
 }

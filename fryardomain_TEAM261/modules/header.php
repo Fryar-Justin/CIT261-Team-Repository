@@ -9,7 +9,7 @@
         <p>Resources</p>
         <a href="#" onclick="tuningPage()">  Tuning</a>
         <a href="/pages/rhythmResources.php">  Rhythms</a>
-        <a href="#" onclick="regimenPage()">>  Regimen</a>
+        <a href="#" onclick="regimenPage()">  Regimen</a>
         <a href="/pages/charts.php">  Charts</a>
         <a href="/pages/videos.php">  Videos</a>
     </div>

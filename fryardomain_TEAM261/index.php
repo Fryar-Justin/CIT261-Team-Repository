@@ -8,7 +8,8 @@
         <script>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/navigation.js'; ?> 
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/ajaxScript.js'; ?>
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/tuning.js'; ?>// Contains navigation bar scripts
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/tuning.js'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/regimen.js'; ?>
         </script>
     </head>
     <body>
@@ -19,6 +20,7 @@
             <div class="rightContent" id="rightContent">
 
             </div>
+            <script><?php include $_SERVER['DOCUMENT_ROOT'].'/modules/javascript/stopwatch.js'; ?></script>
         </main>
         <footer>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php'; ?>                               <!--Contains footer tags-->

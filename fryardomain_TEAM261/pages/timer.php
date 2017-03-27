@@ -18,11 +18,10 @@
         <main>
             <div class="rightContent">
                 <h1 id="timer">00 : 00 </h1>
-  		<img id="toggle" src="/media/img/start-up.png"></img>
-  		<img id="stop" src="/media/img/stop-up.png"></img><br>
-  		<button id="set" ontouch="practHistory()">Set Practice Time</button>
-  		<button id="reset">Reset</button>
-                <script src="/modules/javascript/stopwatch.js"></script>
+  		<img id="toggle" src="/media/img/start-up.png" onclick="start()"></img>
+  		<img id="stop" src="/media/img/stop-up.png" onclick="stopTimer()"></img><br>
+  		<button id="set" ontouch="practHistory()" onclick="practHistory()">Set Practice Time</button>
+  		<button id="reset" onclick="watch.reset()">Reset</button>
                 <br><br>
                 <p>Optional Message:</p><textarea name="message" id="message" class="timerMessage"><?php echo htmlentities($user_message) ?></textarea><br>
                 <button id="send" class="sendButton" onclick="mailTime()">Send Latest Practice Time to Teacher</button><br>
@@ -30,6 +29,7 @@
   		<div id="practiceHistory"></div>
   		
             </div>
+            <script src="/modules/javascript/stopwatch.js"></script>
         </main>
         <footer>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php'; ?>                               <!--Contains footer tags-->

@@ -17,7 +17,7 @@
         </header>
         <main>
             <div class="rightContent">
-                <h1>Practice Regimen</h1>
+                <h1 onload="remRegimen()">Practice Regimen</h1>
                 <input type="text" id="listInput" placeholder="Input List Item Here"></input><br><br>
                 <button onclick="add()">Add</button>
                 <button onclick="remove()">Remove</button>
