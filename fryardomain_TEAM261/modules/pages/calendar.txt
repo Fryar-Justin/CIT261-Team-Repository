@@ -1,0 +1,14 @@
+<h1>Calendar</h1>
+<hr>
+<div>
+    <canvas id="canvas1" style="width:15%; height:600px; background:red; float:right;"></canvas>
+    <iframe src="https://calendar.google.com/calendar/embed?src=ege4hafdoe4b299o4neucqsfo8%40group.calendar.google.com&ctz=America/Denver" 
+            style="border: 0" width="60%" height="600" frameborder="0" scrolling="no"></iframe>
+    <canvas id="canvas2" style="width:15%; height:600px; background:red; float:left;"></canvas><br>
+    <button type="button" onclick="draw('canvas1', 'saxaphone')">Draw Saxaphone</button>
+    <div style="display:none;">
+        <img id="saxaphone" src="/media/img/saxaphone.jpg"
+        >
+        <img id="trumpet" src="/media/img/trumpet.jpg">
+    </div>
+</div>

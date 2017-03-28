@@ -5,13 +5,13 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#" onclick="timerPage()">Practice</a>
-        <a href="/pages/calendar.php">Calendar</a>
+        <a href="#" onclick="getObject(pageDirectory.calendar)">Calendar</a>
         <p>Resources</p>
         <a href="#" onclick="tuningPage()">  Tuning</a>
         <a href="/pages/rhythmResources.php">  Rhythms</a>
         <a href="#" onclick="regimenPage()">  Regimen</a>
-        <a onclick="getObject(pageDirectory[1])">  Charts</a>
-        <a onclick="getObject(pageDirectory[0])">  Videos</a>
+        <a href="#" onclick="getObject(pageDirectory.charts)">  Charts</a>
+        <a href="#" onclick="getObject(pageDirectory.videos)">  Videos</a>
     </div>
     <span id="icon" onclick="openNav()">&#9776;</span>
 </div>

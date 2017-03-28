@@ -6,8 +6,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/head.php'; ?>         <!--Contains the CSS and Google Fonts links-->
         <script>
-            var pageDirectory = ["/modules/pages/videos.txt",
-                "/modules/pages/charts.txt"];
+            var pageDirectory = {videos:"videos",
+                                 charts:"charts",
+                                 calendar:"calendar",
+                                 charts:"charts",
+                                 login:"login",
+                                 rythemResources:"rythemResources",
+                                 timer:"timer"};
 
             function getObject(directory) {
                 var xmlhttp = new XMLHttpRequest();
@@ -16,8 +21,7 @@
                         handleManualObjectResponse(this.responseText);
                     }
                 }
-
-                xmlhttp.open("GET", directory, true);
+                xmlhttp.open("GET", "/modules/pages/" + directory + ".txt", true);
                 xmlhttp.send();
 
                 function handleManualObjectResponse(response) {
@@ -34,9 +38,10 @@
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/stopwatch.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/tuning.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/videos.js'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/calendar.js'; ?>
         </script>
     </head>
-    <body>
+    <body onload="getObject(pageDirectory.calendar)">
         <header>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/header.php'; ?>                               <!--Contains navigation tags-->
         </header>
