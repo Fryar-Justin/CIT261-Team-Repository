@@ -9,9 +9,8 @@
             var pageDirectory = {videos:"videos",
                                  charts:"charts",
                                  calendar:"calendar",
-                                 charts:"charts",
                                  login:"login",
-                                 rythemResources:"rythemResources",
+                                 rhythmResources:"rhythmResources",
                                  timer:"timer"};
 
             function getObject(directory) {
@@ -34,7 +33,7 @@
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/login.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/navigation.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/regimen.js'; ?>
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/rythemResources.js'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/rhythmResources.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/stopwatch.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/tuning.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/videos.js'; ?>
