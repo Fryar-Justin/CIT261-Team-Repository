@@ -1,25 +1,22 @@
-var registerNameInput = document.getElementById('registerNameInput').value;
-var registerPasswordInput = document.getElementById('registerPasswordInput').value;
 
-function addInfo() {
-    localStorage.setItem('registerNameInput', registerNameInput);
-    localStorage.setItem('registerPasswwordInput', registerPasswordInput);
-    alert('Thank you for registering! You may now sign in.');
-}
-function verifyInfo() {
+function verifyLogin(){
+    var nameInput = document.getElementById('nameInput').value;
+    var passcodeInput = document.getElementById('passcodeInput').value;
+    var nameList = ["Kailey", "Justin", "DeAnna"];
 
-    var usernameList = localStorage.getItem('registerNameInput');
-    var passwordList = localStorage.getItem('registerPasswordInput');
-
-    var usernameInput = document.getElementById('usernameInput').value;
-    var passwordInput = document.getElementById('passwordInput').value;
-
-
-    if(usernameInput != usernameList && passwordInput != passwordList) {
-        alert('Welcome ' + usernameInput +'!');  
-        document.getElementById('usernameOutput').innerHTML = 'Welcome ' + usernameInput + '!';}
-    else {
-        alert('Please enter the correct username and password.');
+    for(var i = 0; i < nameList.length; i++)
+        
+    { 
+        if(nameList[i] === nameInput && passcodeInput === 'CIT261'){
+            document.getElementById('nameOutput').innerHTML = "Welcome " + nameInput + "!";
+            document.getElementById("nameInput").reset();
+            document.getElementById("passcodeInput").reset();
+        }
+    else{
+        document.getElementById('nameOutput').innerHTML = 'Please enter the correct username and password.';
+        document.getElementById("nameInput").reset();
+        document.getElementById("passcodeInput").reset();
+        }
     }
-    
+        
 }

@@ -1,0 +1,8 @@
+<h3>Please enter the name you registered at school with and the class code your professor gave you. </h3>
+                <br>Name: <br>
+                <input type= "text" id='nameInput'>
+                <br>Passcode: <br>
+                <input type= "text" id='passcodeInput'>
+                <br><button type="button" onclick="verifyLogin()">Login</button>
+                <div id= 'nameOutput'></div>
+                

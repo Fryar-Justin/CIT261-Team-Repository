@@ -1,0 +1,23 @@
+<h1>Rhythm Resources</h1>
+                <p>Here are some sets of rhythm lines and audio recordings that will help you practice your rhythm.</p><br><br>
+
+
+<button class="rhythmBtn" id="Example1" onclick='changeMedia("/media/rhythmResources/1.jpg", "/media/rhythmResources/1.ogg")'>Example 1</button>
+<button class="rhythmBtn" id="Example2" onclick='changeMedia("/media/rhythmResources/2.jpg", "/media/rhythmResources/2.ogg")'>Example 2</button>
+<button class="rhythmBtn" id="Example3" onclick='changeMedia("/media/rhythmResources/3.jpg", "/media/rhythmResources/3.ogg")'>Example 3</button>
+<button class="rhythmBtn" id="Example4" onclick='changeMedia("/media/rhythmResources/4.jpg", "/media/rhythmResources/4.ogg")'>Example 4</button>
+<button class="rhythmBtn" id="Example5" onclick='changeMedia("/media/rhythmResources/5.jpg", "/media/rhythmResources/5.ogg")'>Example 5</button>
+<button class="rhythmBtn" id="Example6" onclick='changeMedia("/media/rhythmResources/6.jpg", "/media/rhythmResources/6.ogg")'>Example 6</button>
+<button class="rhythmBtn" id="Example7" onclick='changeMedia("/media/rhythmResources/7.jpg", "/media/rhythmResources/7.ogg")'>Example 7</button>
+<button class="rhythmBtn" id="Example8" onclick='changeMedia("/media/rhythmResources/8.jpg", "/media/rhythmResources/8.ogg")'>Example 8</button>
+<button class="rhythmBtn" id="Example9" onclick='changeMedia("/media/rhythmResources/9.jpg", "/media/rhythmResources/9.ogg")'>Example 9</button>
+    
+    
+    <br><br>
+
+ <img id="exampleImg" src="/media/rhythmResources/1.jpg"  /><br>
+
+<audio id= 'audioPlayer' controls>
+      <source id="ogg_src" src="/media/rhythmResources/1.ogg" type="audio/ogg" />
+      Your browser does not support the audio element.
+</audio>

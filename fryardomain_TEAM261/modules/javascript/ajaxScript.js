@@ -42,3 +42,27 @@ function regimenPage(){
   </div>";
     remRegimen();
 }
+function rhythmResourcesPage(){
+    document.getElementById("rightContent").innerHTML = "\n\
+<h1>Rhythm Resources</h1>\n\
+<p>Here are some sets of rhythm lines and audio recordings that will help you practice your rhythm.</p><br><br>\n\
+<button class='rhythmBtn' id='Example1' onclick='changeMedia('/media/rhythmResources/1.jpg', '/media/rhythmResources/1.ogg')'>Example 1</button>\n\
+<button class='rhythmBtn' id='Example2' onclick='changeMedia('/media/rhythmResources/2.jpg', '/media/rhythmResources/2.ogg')'>Example 2</button>\n\
+<button class='rhythmBtn' id='Example3' onclick='changeMedia('/media/rhythmResources/3.jpg', '/media/rhythmResources/3.ogg')'>Example 3</button>\n\
+<button class='rhythmBtn' id='Example4' onclick='changeMedia('/media/rhythmResources/4.jpg', '/media/rhythmResources/4.ogg')'>Example 4</button>\n\
+<button class='rhythmBtn' id='Example5' onclick='changeMedia('/media/rhythmResources/5.jpg', '/media/rhythmResources/5.ogg')'>Example 5</button>\n\
+<button class='rhythmBtn' id='Example6' onclick='changeMedia('/media/rhythmResources/6.jpg', '/media/rhythmResources/6.ogg')'>Example 6</button>\n\
+<button class='rhythmBtn' id='Example7' onclick='changeMedia('/media/rhythmResources/7.jpg', '/media/rhythmResources/7.ogg')'>Example 7</button>\n\
+<button class='rhythmBtn' id='Example8' onclick='changeMedia('/media/rhythmResources/8.jpg', '/media/rhythmResources/8.ogg')'>Example 8</button>\n\
+<button class='rhythmBtn' id='Example9' onclick='changeMedia('/media/rhythmResources/9.jpg', '/media/rhythmResources/9.ogg')'>Example 9</button>\n\
+<br><br>\n\
+<img id='exampleImg' src='/media/rhythmResources/1.jpg'  /><br>\n\
+<audio id= 'audioPlayer' controls>\n\
+<source id='ogg_src' src='/media/rhythmResources/1.ogg' type='audio/ogg' />\n\
+Your browser does not support the audio element.\n\
+</audio>\n\
+"
+}
+function loginPage(){
+    
+}

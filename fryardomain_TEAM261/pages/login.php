@@ -15,22 +15,13 @@
         </header>
         <main>
             <div class="rightContent">
-               <div id="usernameOutput">Welcome</div>
-                <hr>
-                <p>Please Enter your login credentials. </p>
-                <br>Username: <br>
-                <input type= "text" id='usernameInput'>
-                <br>Password: <br>
-                <input type= "text" id='passwordInput'>
-                <br><button type="button" onclick="verifyInfo()">Login</button>
-                <p>Haven't registered? Fill out the form below to register your username and password!</p>
-                <br>Please add your Username: <br>
-                <input type= "text" id='usernameInput'>
-                <br>Please add your Password: <br>
-                <input type= "text" id='passwordInput'><br>
-                <button type="button" onclick="addInfo()">Register</button>
-                
-            </div>
+              <h3>Please enter the name you registered at school with and the class code your professor gave you. </h3>
+                <br>Name: <br>
+                <input type= "text" id='nameInput'>
+                <br>Passcode: <br>
+                <input type= "text" id='passcodeInput'>
+                <br><button type="button" onclick="verifyLogin()">Login</button>
+                <div id= 'nameOutput'></div>
         </main>
         <footer>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php'; ?>                               <!--Contains footer tags-->
