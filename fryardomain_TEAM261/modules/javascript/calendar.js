@@ -1,20 +1,35 @@
-function intervalTimer(canvasId, imageId){
-    var interval = setInterval(draw, 3000, canvasId, imageId);
+function intervalTimer(canvasId){
+    var interval = setInterval(draw, 1000, canvasId + "1");
+    var interval2 = setInterval(draw, 1000, canvasId + "2");
 }
 
-function draw(canvasId, imageId){
+function draw(canvasId){
+    var imageId = ["treble", "half", "quarter", "eighth"];
+    
     var c = document.getElementById(canvasId);
     var ctx = c.getContext("2d");
-    var img = document.getElementById(imageId);
-    var randomX = Math.floor(Math.random() * 123);
-    var randomY = Math.floor(Math.random() * 567);
+    var img = document.getElementById(imageId[Math.floor(Math.random() * 3) + 1]);
     
-//    ctx.clearRect(0, 0, c.width, c.height);
-    ctx.drawImage(img , randomX, randomY);
-    document.getElementById("output").innerHTML = "X-Random: " + randomX + "<br>" +
-                                                  "Y-Random: " + randomY + "<br>" +
-                                                  "Canvas Width: " + c.width + "<br>" + 
-                                                  "Canvas Height: " + c.height + "<br>" + 
-                                                  "Image Width: " + img.width + "<br>" + 
-                                                  "Image Height: " + img.height;
+    // draw treble 6 notes at a time on each canvas    
+    ctx.clearRect(0, 0, c.width, c.height);
+    ctx.drawImage(img , Math.floor(Math.random() * 123), Math.floor(Math.random() * 567));
+    
+    // draw note
+    img = document.getElementById(imageId[Math.floor(Math.random() * 3) + 1]);
+    ctx.drawImage(img , Math.floor(Math.random() * 3), Math.floor(Math.random() * 567));
+    
+    img = document.getElementById(imageId[Math.floor(Math.random() * 3) + 1]);
+    ctx.drawImage(img , Math.floor(Math.random() * 3), Math.floor(Math.random() * 567));
+    
+    img = document.getElementById(imageId[Math.floor(Math.random() * 3) + 1]);
+    ctx.drawImage(img , Math.floor(Math.random() * 3), Math.floor(Math.random() * 567));
+    
+    img = document.getElementById(imageId[Math.floor(Math.random() * 3) + 1]);
+    ctx.drawImage(img , Math.floor(Math.random() * 3), Math.floor(Math.random() * 567));
+    
+    img = document.getElementById(imageId[Math.floor(Math.random() * 3) + 1]);
+    ctx.drawImage(img , Math.floor(Math.random() * 3), Math.floor(Math.random() * 567));
+    
+    img = document.getElementById(imageId[Math.floor(Math.random() * 3) + 1]);
+    ctx.drawImage(img , Math.floor(Math.random() * 3), Math.floor(Math.random() * 567));
 }

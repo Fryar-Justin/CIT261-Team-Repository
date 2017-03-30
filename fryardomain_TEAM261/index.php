@@ -40,7 +40,7 @@
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/calendar.js'; ?>
         </script>
     </head>
-    <body onload="getObject(pageDirectory.calendar)">
+    <body>
         <header>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/header.php'; ?>                               <!--Contains navigation tags-->
         </header>

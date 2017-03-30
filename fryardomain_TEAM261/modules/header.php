@@ -6,7 +6,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#" onclick="getObject(pageDirectory.login)">  Login</a>
         <a href="#" onclick="timerPage()">Practice</a>
-        <a href="#" onclick="getObject(pageDirectory.calendar)">Calendar</a>
+        <a href="#" onclick="getObject(pageDirectory.calendar); onclick=intervalTimer('canvas')">Calendar</a>
         <p>Resources</p>
         <a href="#" onclick="tuningPage()">  Tuning</a>
         <a href="#" onclick="getObject(pageDirectory.rhythmResources)">  Rhythms</a>
