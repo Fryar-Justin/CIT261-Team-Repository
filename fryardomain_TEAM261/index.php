@@ -30,7 +30,7 @@
                 }
             }
             
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/ajaxScript.js'; ?>
+
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/charts.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/login.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/navigation.js'; ?>

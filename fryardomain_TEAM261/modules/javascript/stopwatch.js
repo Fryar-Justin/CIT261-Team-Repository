@@ -69,10 +69,6 @@ function Stopwatch(elem) {
 
 
 var timer = document.getElementById('timer');
-//var toggleBtn = document.getElementById('toggle');
-//var stopBtn = document.getElementById('stop');
-//var resetBtn = document.getElementById('reset');
-//var setBtn = document.getElementById('set');
 
 var watch = new Stopwatch(timer);
 
@@ -93,21 +89,6 @@ function stopTimer() {
 function resetTimer(){
 	 watch.reset();
 }
-/*
-stopBtn.addEventListener('click', function() {
-  stop();
-
-});
-
-toggleBtn.addEventListener('click', function() {
-  start();
-});
-resetBtn.addEventListener('click', function() {
-  watch.reset();
-});
-setBtn.addEventListener('click', function() {
-  practHistory();
-});*/
 
 function practHistory(){
 	if (timerSeconds > 0){
@@ -139,15 +120,4 @@ function remTimes(){
 	var dates = JSON.parse(localStorage.getItem("practiceDates"));
 	setTime(times, dates);
 }
-function mailTime(){
-    $.ajax( { type : 'POST',
-          data : { },
-          url  : '/pages/mail2.php',              // <=== CALL THE PHP FUNCTION HERE.
-          success: function ( data ) {
-            alert( 'Your message and amount of time practiced has been sent');               // <=== VALUE RETURNED FROM FUNCTION.
-          },
-          error: function ( xhr ) {
-            alert( "error" );
-          }
-        });
-}
+

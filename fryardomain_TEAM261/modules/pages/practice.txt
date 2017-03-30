@@ -4,7 +4,5 @@
 <button id="set" ontouch="practHistory()" onclick="practHistory()">Set Practice Time</button>
 <button id="reset" onclick="watch.reset()">Reset</button>
 <br><br>
-<p>Optional Message:</p><textarea name="message" id="message" class="timerMessage"></textarea><br>
-<button id="send" class="sendButton" onclick="mailTime()">Send Latest Practice Time to Teacher</button><br>
 <h2>Last Seven Practice Times:</h2>
 <div id="practiceHistory"></div>
