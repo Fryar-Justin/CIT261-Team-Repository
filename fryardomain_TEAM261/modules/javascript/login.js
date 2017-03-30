@@ -1,6 +1,4 @@
-var nameList = ["Kailey", "DeAnna", "Justin"];
-var nInput = document.getElementById('nameInput').value;
-var codeInput = document.getElementById('passcodeInput').value;
+
 
 /*function getInfo(){
 	var xmlhttp = new XMLHttpRequest();
@@ -14,6 +12,9 @@ var codeInput = document.getElementById('passcodeInput').value;
 } */
 
 function verifyLogin(){
+var nameList = ["Kailey", "DeAnna", "Justin"];
+var nInput = document.getElementById('nameInput').value;
+var codeInput = document.getElementById('passcodeInput').value;
     for(var i = 0; i < nameList.length; i++){ 
             if(nameList[i] === nInput && codeInput === 'CIT261'){
             document.getElementById('nameOutput').innerHTML = "Welcome " + nInput + "!";
