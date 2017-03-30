@@ -8,9 +8,9 @@
         <a href="#" onclick="timerPage()">Practice</a>
         <a href="#" onclick="getObject(pageDirectory.calendar); onclick=intervalTimer('canvas')">Calendar</a>
         <p>Resources</p>
-        <a href="#" onclick="tuningPage()">  Tuning</a>
+        <a href="#" onclick="getObject(pageDirectory.tuning)">  Tuning</a>
         <a href="#" onclick="getObject(pageDirectory.rhythmResources)">  Rhythms</a>
-        <a href="#" onclick="regimenPage()">  Regimen</a>
+        <a href="#" onclick="getObject(pageDirectory.regimen); remRegimen()">  Regimen</a>
         <a href="#" onclick="getObject(pageDirectory.charts)">  Charts</a>
         <a href="#" onclick="getObject(pageDirectory.videos)">  Videos</a>
     </div>

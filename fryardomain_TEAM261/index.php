@@ -11,7 +11,9 @@
                                  calendar:"calendar",
                                  login:"login",
                                  rhythmResources:"rhythmResources",
-                                 timer:"timer"};
+                                 timer:"timer",
+                                 tuning:"tuning",
+                                 regimen:"regimen"};
 
             function getObject(directory) {
                 var xmlhttp = new XMLHttpRequest();
