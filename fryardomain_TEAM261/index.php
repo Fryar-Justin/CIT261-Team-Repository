@@ -11,7 +11,7 @@
                                  calendar:"calendar",
                                  login:"login",
                                  rhythmResources:"rhythmResources",
-                                 timer:"timer",
+                                 practice:"practice",
                                  tuning:"tuning",
                                  regimen:"regimen"};
 
@@ -22,7 +22,7 @@
                         handleManualObjectResponse(this.responseText);
                     }
                 }
-                xmlhttp.open("GET", "/modules/pages/" + directory + ".txt", true);
+                xmlhttp.open("GET", "/modules/pages/" + directory + ".txt", false);
                 xmlhttp.send();
 
                 function handleManualObjectResponse(response) {

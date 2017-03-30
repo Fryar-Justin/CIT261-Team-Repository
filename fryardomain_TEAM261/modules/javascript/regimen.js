@@ -1,5 +1,5 @@
 var step = 0;
-var regimenArray = new Array();
+var regimenArray = {};
 
 function add(){
     document.getElementById("practiceList").innerHTML = '';
@@ -13,7 +13,7 @@ function add(){
     document.getElementById("listInput").value = '';
     localStorage.setItem("regimen", JSON.stringify(regimenArray));
 }
-function remove(){  
+function removeItem(){  
     if (step >= 1){
         document.getElementById("practiceList").innerHTML = '';
         regimenArray[step] = '';
@@ -33,9 +33,10 @@ function reset(){
 }
 
 function remRegimen(){
-    retrieve = JSON.parse(localStorage.getItem("regimen")); 
+    var retrieve = JSON.parse(localStorage.getItem("regimen")); 
     regimenArray = retrieve;
     step = regimenArray.length - 1;
+    document.getElementById("practiceList").innerHTML = "";
   for (i = 1; i < regimenArray.length; i++){
      document.getElementById("practiceList").innerHTML += regimenArray[i];
    }
