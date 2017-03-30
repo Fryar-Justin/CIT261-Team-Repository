@@ -1,6 +1,6 @@
 <div id="header">
     <div class="banner">
-        <h1>Welcome!</h1>
+        <h1  id="headerTag">Welcome!</h1>
     </div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
