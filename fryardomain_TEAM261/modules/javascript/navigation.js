@@ -1,5 +1,7 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    if (loginSuccessful == true) {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
 }
 
 function closeNav() {

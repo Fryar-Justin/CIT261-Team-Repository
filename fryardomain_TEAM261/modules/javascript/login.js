@@ -11,6 +11,8 @@
 	xmlhttp.send();
 } */
 
+var loginSuccessful = false;
+
 function verifyLogin(){
 var nameList = ["Kailey", "DeAnna", "Justin"];
 var nInput = document.getElementById('nameInput').value;
@@ -19,7 +21,7 @@ var codeInput = document.getElementById('passcodeInput').value;
             if(nameList[i] === nInput && codeInput === 'CIT261'){
             document.getElementById('nameOutput').innerHTML = "Welcome " + nInput + "!";
             document.getElementById('headerTag').innerHTML = "Welcome " + nInput + "!";
-            document.getElementById("mySidenav").enabled; 
+            loginSuccessful = true; 
             return;
             }
      else{

@@ -4,7 +4,7 @@
     </div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#" onclick="getObject(pageDirectory.login)">  Login</a>
+        <!--<a href="#" onclick="getObject(pageDirectory.login)">  Login</a>-->
         <a href="#" onclick="getObject(pageDirectory.practice); resetTimer(); remTimes()">Practice</a>
         <a href="#" onclick="getObject(pageDirectory.calendar); onclick=intervalTimer('canvas')">Calendar</a>
         <p>Resources</p>
