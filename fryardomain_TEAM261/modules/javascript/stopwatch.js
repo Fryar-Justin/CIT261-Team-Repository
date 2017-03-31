@@ -1,7 +1,9 @@
 var time;
 var timerMinutes;
 var timerSeconds;
-var isRunning = false;
+var times = new Array();
+var dates = new Array();
+
 
 function Stopwatch(elem) {
   var interval;
@@ -93,9 +95,6 @@ function resetTimer(){
 function practHistory(){
 	if (timerSeconds > 0){
         
-	var times = JSON.parse(localStorage.getItem("practiceTimes"));
-	var dates = JSON.parse(localStorage.getItem("practiceDates"));
-        
         times.push(timerMinutes + ' : ' + timerSeconds);
 	dates.push( new Date().toJSON().slice(0,10).replace(/-/g,'/'));
         
@@ -104,20 +103,28 @@ function practHistory(){
 	}
 }
 
-function setTime(time, date){
+function setTime(times, dates){
     var textnode = "";
-    for (i = time.length - 1; i >= 0;  i--){
-			textnode += date[i] + ": Practiced for " + time[i] + "</br>";
+    for (i = times.length - 1; i >= 0;  i--){
+			textnode += dates[i] + ": Practiced for " + times[i] + "</br>";
 	}
 	document.getElementById("practiceHistory").innerHTML = textnode;
         
-        localStorage.setItem("practiceTimes", JSON.stringify(time.slice(0).slice(-7)));
-	localStorage.setItem("practiceDates", JSON.stringify(date.slice(0).slice(-7)));
+        localStorage.setItem("practiceTimes", JSON.stringify(times.slice(0).slice(-7)));
+	localStorage.setItem("practiceDates", JSON.stringify(dates.slice(0).slice(-7)));
 }
 
 function remTimes(){
-        var times = JSON.parse(localStorage.getItem("practiceTimes"));
-	var dates = JSON.parse(localStorage.getItem("practiceDates"));
-	setTime(times, dates);
+    var retrieveTimes = JSON.parse(localStorage.getItem("practiceTimes"));
+    var retrieveDates =  JSON.parse(localStorage.getItem("practiceDates"));
+    if (retrieveTimes === null){
+        
+    }else{
+    if (retrieveTimes.length > 0){
+	setTime(retrieveTimes, retrieveDates);
+        times = retrieveTimes;
+        dates = retrieveDates;
+    }
+    }
 }
 
