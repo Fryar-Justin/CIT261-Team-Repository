@@ -18,15 +18,27 @@
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function () {
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                        handleManualObjectResponse(this.responseText);
+                        if (directory == "practice"){
+                            handleManualObjectResponse(this.responseText);
+                            resetTimer(); 
+                            remTimes();
+                        }
+                        else if (directory == "regimen"){
+                            handleManualObjectResponse(this.responseText);
+                            remRegimen();
+                        }
+                        else {
+                            handleManualObjectResponse(this.responseText);
+                        }
                     }
                 }
-                xmlhttp.open("GET", "/modules/pages/" + directory + ".txt", false);
+                xmlhttp.open("GET", "/modules/pages/" + directory + ".txt", true);
                 xmlhttp.send();
 
                 function handleManualObjectResponse(response) {
                     document.getElementById('rightContent').innerHTML = response;
                 }
+                
             }
             
             
