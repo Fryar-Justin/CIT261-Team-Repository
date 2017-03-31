@@ -6,6 +6,9 @@ body {
 h1, h2, h3 {
     color: #68014B;
 }
+input {
+    border-radius: 10px;
+}
 p {
     font-family: 'Droid Sans', sans-serif;
 }
