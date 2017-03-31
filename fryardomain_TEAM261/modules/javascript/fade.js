@@ -5,12 +5,14 @@ element.style.transition = "opacity .2s";
 var button1 = document.getElementById("icon");
 
 function fadeOut() {
-    element.style.opacity = 0;
-    
+    if (loginSuccessful == true) {
+        element.style.opacity = 0;
+    }
+
 }
 
 function fadeIn() {
     element.style.opacity = 1;
 }
 
-button1.addEventListener("click", fadeOut , false);
+button1.addEventListener("click", fadeOut, false);

@@ -12,6 +12,26 @@ input {
 p {
     font-family: 'Droid Sans', sans-serif;
 }
+#dancingNote {
+    text-align: center;
+}
+#dancingNote img{
+    width: 80%;
+    height: 80%;
+    animation-name: dance;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: dance;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+@keyframes dance {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(10deg);}
+    100% {transform: rotate(-20deg);}
+}
 .rightContent{
     text-align: center;
 }
