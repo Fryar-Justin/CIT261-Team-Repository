@@ -29,6 +29,7 @@
                 }
             }
             
+            
 
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/charts.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/login.js'; ?>
@@ -48,7 +49,10 @@
             <div class="rightContent" id="rightContent">
 
             </div>
-            <script><?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/stopwatch.js'; ?></script>
+            <script>
+                <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/stopwatch.js'; ?>
+                <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/fade.js'; ?>
+            </script>
         </main>
         <footer>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/footer.php'; ?>                               <!--Contains footer tags-->
