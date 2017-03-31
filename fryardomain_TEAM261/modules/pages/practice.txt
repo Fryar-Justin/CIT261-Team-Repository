@@ -1,3 +1,5 @@
+<h1>Practice Timer</h1>
+<hr>
 <h1 id="timer">00 : 00 </h1>
 <img id="toggle" src="/media/img/start-up.png" onclick="start()"></img>
 <img id="stop" src="/media/img/stop-up.png" onclick="stopTimer()"></img><br>

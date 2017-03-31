@@ -1,7 +1,7 @@
 var created = false;
 
-function main() {
-    var instrumentList = ["flute", "trumpet", "saxaphone", "clarinet", "tuba"];
+function main() { 
+    var instrumentList = ["flute", "trumpet", "saxaphone", "clarinet", "tuba", "bassoon"];
     var imageSource = {
         flute: "/media/fingering/flute.jpg",
         trumpet: "/media/fingering/trumpet.jpg",

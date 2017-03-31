@@ -15,8 +15,6 @@ p {
 .rightContent{
     text-align: center;
 }
-
-
 #icon {
     font-size: 36px; 
     cursor:pointer; 
@@ -166,11 +164,15 @@ button:hover{
     #stop{width: 100px;}
     #exampleImg{width: 100%;}
     #video{max-width: 320px;}
+    .banner h1{font-size: 20px;}
+    #icon{font-size: 20px; top:5px;}
 }
 @media only screen and (min-width: 430px) {
     #toggle{width: 150px;}
     #stop{width: 150px;}
     #video{max-width: 430px;}
+    .banner h1{font-size: 40px;}
+    #icon{font-size: 36px; top:10px;}
 }
 @media only screen and (min-width: 1024px){
     #exampleImg{width: 723px;}

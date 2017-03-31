@@ -1,3 +1,5 @@
+<h1>Tuning</h1>
+<hr>
 <div id="noteSelect">
     <select onchange="noteChoice(value)">
         <option value="Select">Select a Note</option>
