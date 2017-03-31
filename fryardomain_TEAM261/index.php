@@ -3,7 +3,6 @@
 <html>
     <head>
         <title>Music Mania</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/head.php'; ?>         <!--Contains the CSS and Google Fonts links-->
         <script>
             var pageDirectory = {videos:"videos",
@@ -36,7 +35,6 @@
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/navigation.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/regimen.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/rhythmResources.js'; ?>
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/stopwatch.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/tuning.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/videos.js'; ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/modules/javascript/calendar.js'; ?>
