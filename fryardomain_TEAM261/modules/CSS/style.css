@@ -80,7 +80,7 @@ p {
 	font-size: 56px;
 }
 
-#noteSelect select {
+#noteSelect select, #instrument {
    border: 0;
    color: white;
    background: transparent;
@@ -96,7 +96,7 @@ p {
    background: #5da1a2;
 }
 
-#noteSelect option{
+#noteSelect option, #instrument{
    background: white;
    color: black;
 }

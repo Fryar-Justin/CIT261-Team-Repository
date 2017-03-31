@@ -7,7 +7,8 @@ function main() {
         trumpet: "/media/fingering/trumpet.jpg",
         saxaphone: "/media/fingering/saxaphone.jpg",
         clarinet: "/media/fingering/clarinet.jpg",
-        tuba: "/media/fingering/tuba.jpg"};
+        tuba: "/media/fingering/tuba.jpg",
+        bassoon: "/media/fingering/bassoon.jpg"};
 
     var instrument = document.getElementById("instrument").value;   // get the instrument selected
 
@@ -31,7 +32,7 @@ function main() {
 
 function displayInstrument(instrument, imageSource) {
     var selectedInstrument;
-    switch (instrument) {                                           // use efficient switch statement to determine chart to display
+    switch (instrument) {       // use efficient switch statement to determine chart to display
         case "Flute":
             selectedInstrument = imageSource.flute;
             break;
@@ -46,6 +47,9 @@ function displayInstrument(instrument, imageSource) {
             break;
         case "Tuba":
             selectedInstrument = imageSource.tuba;
+            break;
+        case "Bassoon":
+            selectedInstrument = imageSource.bassoon;
             break;
     }
 

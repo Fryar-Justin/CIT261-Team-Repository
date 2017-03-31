@@ -1,7 +1,7 @@
 function openNav() {
-    //if (loginSuccessful == true) {
+//    if (loginSuccessful == true) {
         document.getElementById("mySidenav").style.width = "250px";
-    //}
+//    }
 }
 
 function closeNav() {

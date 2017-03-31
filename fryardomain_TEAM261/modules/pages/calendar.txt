@@ -1,10 +1,8 @@
 <h1>Calendar</h1>
 <hr>
 <div>
-    <canvas id="canvas1" width="200px" height="600px" style="float:left;"></canvas>
     <iframe src="https://calendar.google.com/calendar/embed?src=ege4hafdoe4b299o4neucqsfo8%40group.calendar.google.com&ctz=America/Denver" 
-            style="border: 0" width="60%" height="600" frameborder="0" scrolling="no"></iframe>
-    <canvas id="canvas2" width="200px" height="600px" style="float:right;"></canvas>
+        style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
     <div style="display:none;">
         <img id="treble" src="/media/img/treble.png" width="89" height="89">
         <img id="half" src="/media/img/half.png" width="89" height="89">

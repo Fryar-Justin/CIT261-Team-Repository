@@ -1,7 +1,7 @@
 <div id="noteSelect">
     <select onchange="noteChoice(value)">
         <option value="Select">Select a Note</option>
-     <option value="A">A</option>
+        <option value="A">A</option>
         <option value="A♭">A&#9837;</option>
         <option value="B">B</option>
         <option value="B♭">B&#9837;</option>

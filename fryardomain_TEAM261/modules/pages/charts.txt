@@ -1,7 +1,9 @@
 <h1>Fingering Charts</h1>
 <hr>
 <p>Please select an instrument to see the fingering charts</p>
-<select onclick="main()" id="instrument" style="width:300px; height:75px" multiple>
+<select onchange="main()" id="instrument">
+    <option></option>
+    <option>Bassoon</option>
     <option>Flute</option>
     <option>Trumpet</option>
     <option>Saxophone</option>
