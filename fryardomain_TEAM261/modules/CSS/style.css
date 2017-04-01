@@ -177,7 +177,7 @@ button:hover{
 }
 
 
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 430px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
     #toggle{width: 100px;}
@@ -187,14 +187,14 @@ button:hover{
     .banner h1{font-size: 20px;}
     #icon{font-size: 20px; top:5px;}
 }
-@media only screen and (min-width: 430px) {
+@media screen and (min-width: 430px) and (max-width: 1024px){
     #toggle{width: 150px;}
     #stop{width: 150px;}
     #video{max-width: 430px;}
     .banner h1{font-size: 40px;}
     #icon{font-size: 36px; top:10px;}
 }
-@media only screen and (min-width: 1024px){
+@media screen and (min-width: 1024px){
     #exampleImg{width: 723px;}
     #fingeringCharts img{max-width: 900px;}
     #video{max-width: 1024px;}

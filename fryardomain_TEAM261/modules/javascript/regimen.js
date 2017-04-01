@@ -1,5 +1,5 @@
 var step = 0;
-var regimenArray = {};
+var regimenArray = new Array();
 
 function add() {
     document.getElementById("practiceList").innerHTML = '';
@@ -33,12 +33,19 @@ function reset() {
 }
 
 function remRegimen() {
+    step = 0;
+    regimenArray = new Array();
     var retrieve = JSON.parse(localStorage.getItem("regimen"));
+    if (retrieve === null){
+    
+    }else{
     regimenArray = retrieve;
-    step = regimenArray.length - 1;
     document.getElementById("practiceList").innerHTML = "";
     for (i = 1; i < regimenArray.length; i++) {
         document.getElementById("practiceList").innerHTML += regimenArray[i];
+        step += 1;
+    }
+     localStorage.setItem("regimen", JSON.stringify(regimenArray));
     }
 }
 
