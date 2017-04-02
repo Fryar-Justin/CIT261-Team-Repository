@@ -28,6 +28,7 @@
                             remRegimen();
                         }
                         else {
+                            created = false;
                             handleManualObjectResponse(this.responseText);
                         }
                     }
