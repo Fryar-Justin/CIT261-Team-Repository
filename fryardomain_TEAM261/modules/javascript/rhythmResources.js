@@ -14,9 +14,12 @@ image.src = imageSource;
     
     
 function changeMedia(imageSource, audioSourceLink) {
+        
  	showMusicExample(imageSource);
  	changeAudio(audioSourceLink);
  	} 
+
+
  
  
 
