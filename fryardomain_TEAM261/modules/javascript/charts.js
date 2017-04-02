@@ -3,6 +3,7 @@ var created = false;
 function main() { 
     var instrumentList = ["flute", "trumpet", "saxaphone", "clarinet", "tuba", "bassoon"];
     var imageSource = {
+        none: "",
         flute: "/media/fingering/flute.jpg",
         trumpet: "/media/fingering/trumpet.jpg",
         saxaphone: "/media/fingering/saxaphone.jpg",
@@ -11,7 +12,7 @@ function main() {
         bassoon: "/media/fingering/bassoon.jpg"};
 
     var instrument = document.getElementById("instrument").value;   // get the instrument selected
-
+    
     // display the instrument selected
     if (!created) {
         // create needed elements
@@ -33,6 +34,10 @@ function main() {
 function displayInstrument(instrument, imageSource) {
     var selectedInstrument;
     switch (instrument) {       // use efficient switch statement to determine chart to display
+        case "Select Instrument":
+            selectedInstrument = imageSource.none;
+            document.getElementById("heading").innerHTML = "";
+            break;
         case "Flute":
             selectedInstrument = imageSource.flute;
             break;

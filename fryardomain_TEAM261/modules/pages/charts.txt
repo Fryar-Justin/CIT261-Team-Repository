@@ -1,8 +1,8 @@
 <h1>Fingering Charts</h1>
 <hr>
 <p>Please select an instrument to see the fingering charts</p>
-<select onchange="main()" id="instrument">
-    <option></option>
+<select onchange="main()" id="instrument" style="width:250px;">
+    <option>Select Instrument</option>
     <option>Bassoon</option>
     <option>Flute</option>
     <option>Trumpet</option>
